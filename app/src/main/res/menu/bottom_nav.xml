@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/transactionFragment"
+        android:enabled="true"
+        android:icon="@drawable/selector_menu_transaction"
+        android:title="@string/transaction"/>
+    <item
+        android:id="@+id/communityFragment"
+        android:enabled="true"
+        android:icon="@drawable/selector_menu_community"
+        android:title="@string/community"/>
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/selector_menu_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/chatFragment"
+        android:enabled="true"
+        android:icon="@drawable/selector_menu_chat"
+        android:title="@string/chat"/>
+    <item
+        android:id="@+id/myPageFragment"
+        android:enabled="true"
+        android:icon="@drawable/selector_menu_mypage"
+        android:title="@string/mypage"/>
+
+
+</menu>
