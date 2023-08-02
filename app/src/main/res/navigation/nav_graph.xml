@@ -9,25 +9,108 @@
         android:id="@+id/homeFragment"
         android:name="com.opensw.toy.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_alarmFragment"
+            app:destination="@id/alarmFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_communityDetailFragment"
+            app:destination="@id/communityDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transactionDetailFragment"
+            app:destination="@id/transactionDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/communityFragment"
         android:name="com.opensw.toy.fragment.CommunityFragment"
         android:label="fragment_community"
-        tools:layout="@layout/fragment_community" />
+        tools:layout="@layout/fragment_community" >
+        <action
+            android:id="@+id/action_communityFragment_to_communityWriteFragment"
+            app:destination="@id/communityWriteFragment" />
+        <action
+            android:id="@+id/action_communityFragment_to_communityDetailFragment"
+            app:destination="@id/communityDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.opensw.toy.fragment.ChatFragment"
         android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_chattingFragment"
+            app:destination="@id/chattingFragment" />
+    </fragment>
     <fragment
         android:id="@+id/myPageFragment"
         android:name="com.opensw.toy.fragment.MyPageFragment"
         android:label="MyPageFragment"
-        tools:layout="@layout/fragment_my_page" />
+        tools:layout="@layout/fragment_my_page" >
+        <action
+            android:id="@+id/action_myPageFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_myPageFragment_to_recentTransactionFragment"
+            app:destination="@id/recentTransactionFragment" />
+        <action
+            android:id="@+id/action_myPageFragment_to_likeFragment"
+            app:destination="@id/likeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/transactionFragment"
         android:name="com.opensw.toy.fragment.TransactionFragment"
         android:label="TransactionFragment"
-        tools:layout="@layout/fragment_transaction" />
+        tools:layout="@layout/fragment_transaction" >
+        <action
+            android:id="@+id/action_transactionFragment_to_transactionWriteFragment"
+            app:destination="@id/transactionWriteFragment" />
+        <action
+            android:id="@+id/action_transactionFragment_to_transactionDetailFragment"
+            app:destination="@id/transactionDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionWriteFragment"
+        android:name="com.opensw.toy.fragment.TransactionWriteFragment"
+        android:label="fragment_transaction_write"
+        tools:layout="@layout/fragment_transaction_write" />
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="com.opensw.toy.fragment.TransactionDetailFragment"
+        android:label="fragment_transaction_detail"
+        tools:layout="@layout/fragment_transaction_detail" />
+    <fragment
+        android:id="@+id/communityWriteFragment"
+        android:name="com.opensw.toy.fragment.CommunityWriteFragment"
+        android:label="fragment_community_write"
+        tools:layout="@layout/fragment_community_write" />
+    <fragment
+        android:id="@+id/communityDetailFragment"
+        android:name="com.opensw.toy.fragment.CommunityDetailFragment"
+        android:label="fragment_community_detail"
+        tools:layout="@layout/fragment_community_detail" />
+    <fragment
+        android:id="@+id/chattingFragment"
+        android:name="com.opensw.toy.fragment.ChattingFragment"
+        android:label="fragment_chatting"
+        tools:layout="@layout/fragment_chatting" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.opensw.toy.fragment.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/recentTransactionFragment"
+        android:name="com.opensw.toy.fragment.RecentTransactionFragment"
+        android:label="fragment_recent_transaction"
+        tools:layout="@layout/fragment_recent_transaction" />
+    <fragment
+        android:id="@+id/likeFragment"
+        android:name="com.opensw.toy.fragment.LikeFragment"
+        android:label="fragment_like"
+        tools:layout="@layout/fragment_like" />
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.opensw.toy.fragment.AlarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" />
 </navigation>
