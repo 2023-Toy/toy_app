@@ -7,4 +7,10 @@
     <string name="community">커뮤니티</string>
     <string name="chat">채팅</string>
     <string name="mypage">마이페이지</string>
+    <string name="children">우리 아이</string>
+    <string name="name">%s</string>
+    <string name="heart_list">찜 목록</string>
+    <string name="kids_name">%s</string>
+    <string name="birthday">%d.%d.%d 출생</string>
+    <string name="recent">최근 본 거래</string>
 </resources>
