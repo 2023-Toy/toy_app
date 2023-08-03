@@ -16,7 +16,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/tv_Kname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -41,7 +41,7 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/tv_name"
+            app:layout_constraintStart_toEndOf="@+id/tv_Kname"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_man"
             android:layout_marginTop="13dp"
