@@ -24,7 +24,7 @@
             android:text="@string/kids_name"
             app:layout_constraintStart_toEndOf="@+id/iv_cover"
             app:layout_constraintTop_toTopOf="parent"
-            android:textStyle="bold"
+            style="@style/tv_14_semiBold_black"
             android:textColor="@color/black"/>
 
         <TextView
@@ -35,7 +35,8 @@
             android:layout_marginBottom="16dp"
             android:text="@string/birthday"
             app:layout_constraintBottom_toBottomOf="@+id/iv_cover"
-            app:layout_constraintStart_toEndOf="@+id/iv_cover" />
+            app:layout_constraintStart_toEndOf="@+id/iv_cover"
+            style="@style/tv_14_regular_brown"/>
 
         <ImageView
             android:id="@+id/imageView3"

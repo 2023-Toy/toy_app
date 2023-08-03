@@ -7,10 +7,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:background="@color/gray_100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="416dp"
-            android:layout_height="463dp"
+            android:layout_width="411dp"
+            android:layout_height="503dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +46,8 @@
                 android:drawableRight="@drawable/ic_direction"
                 android:gravity="start"
                 android:text="@string/app_option"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/btn_license"
@@ -36,28 +58,59 @@
                 android:drawableRight="@drawable/ic_direction"
                 android:gravity="start"
                 android:text="@string/license"
-                android:textColor="@color/black" />
-
-            <Button
-                android:id="@+id/btn_alaram"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/ic_bell"
-                android:gravity="left"
-                android:text="@string/alarm"
-                android:textColor="@color/black" />
-
-            <Button
-                android:id="@+id/btn_version"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/ic_version"
-                android:gravity="left"
-                android:text="@string/app_version"
                 android:textColor="@color/black"
-                tools:ignore="RtlHardcoded" />
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_alaram"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/ic_bell"
+                    android:gravity="left"
+                    android:text="@string/alarm"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_version"
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/ic_version"
+                    android:gravity="left"
+                    android:text="@string/app_version"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/tv_14_bold_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/version" />
+            </LinearLayout>
 
             <Button
                 android:id="@+id/btn_privacy"
@@ -81,6 +134,7 @@
                 android:gravity="left"
                 android:text="@string/logout"
                 android:textColor="@color/black"
+                android:textSize="14sp"
                 tools:ignore="RtlHardcoded" />
 
             <Button
@@ -92,7 +146,8 @@
                 android:drawableRight="@drawable/ic_direction"
                 android:gravity="left"
                 android:text="@string/out"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -100,35 +155,61 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:srcCompat="@tools:sample/avatars"
-            android:layout_marginBottom="50dp"/>
+            tools:srcCompat="@tools:sample/avatars" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/btn_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginLeft="90dp"
-            android:layout_marginTop="195dp"
+            android:layout_marginTop="235dp"
             android:background=""
+            android:elevation="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_photo"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:elevation="50dp"/>
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/tv_myName"
+            style="@style/tv_16_bold_black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@string/name"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <ImageButton
+            android:id="@+id/btn_rename"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="120dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_rename"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/tv_16_bold_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton6"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="140dp"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

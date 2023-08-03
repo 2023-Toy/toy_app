@@ -39,7 +39,7 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_profile"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:textStyle="bold"
+            style="@style/tv_16_bold_black"
             android:textColor="@color/black"/>
 
         <ImageButton
@@ -63,7 +63,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginStart="10dp"
             android:textSize="20sp"
-            android:textStyle="bold"
+            style="@style/tv_16_bold_black"
             android:textColor="@color/black"
             />
 
@@ -96,7 +96,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_kidsList"
             android:layout_marginStart="20dp"
-            android:textStyle="bold"
+            style="@style/tv_16_bold_black"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"
             />
@@ -126,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recent"
-            android:textStyle="bold"
+            style="@style/tv_16_bold_black"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_heartList"
@@ -151,6 +151,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/rv_kidsList"
             android:layout_marginTop="20dp"
+            style="@style/tv_14_bold_black"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
