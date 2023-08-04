@@ -1,17 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fragment.HomeFragment">
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/home" />
+            android:id="@+id/tv_app_name"
+            style="@style/tv_16_bold_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </FrameLayout>
+        <TextView
+            android:id="@+id/tv_home_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/common"
+            style="@style/tv_16_regular_black"
+            app:layout_constraintBottom_toBottomOf="@+id/ib_home_alarm"
+            app:layout_constraintEnd_toStartOf="@+id/ib_home_alarm"
+            app:layout_constraintTop_toTopOf="@+id/ib_home_alarm" />
+
+        <ImageButton
+            android:id="@+id/ib_home_alarm"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_alarm" />
+
+        <ImageView
+            android:id="@+id/iv_home_profile"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_nickName"
+            app:layout_constraintEnd_toStartOf="@+id/tv_home_nickName"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_nickName"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <include
+            android:id="@+id/et_search"
+            layout="@layout/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingVertical="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/pink_100"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_search"
+            app:layout_constraintStart_toStartOf="@+id/et_search"
+            app:layout_constraintTop_toBottomOf="@+id/et_search" >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_trip_home"
+                    android:layout_width="80dp"
+                    android:layout_height="7dp"
+                    android:backgroundTint="#F9C180"
+                    app:cardCornerRadius="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_home_toyLibrary_title"
+                    app:layout_constraintStart_toStartOf="@+id/tv_home_toyLibrary_title" />
+
+                <TextView
+                    android:id="@+id/tv_home_toyLibrary_title"
+                    style="@style/tv_14_semiBold_black"
+                    android:elevation="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/toy_library_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_home_toyLibrary_content"
+                    style="@style/tv_12_regular_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/toy_library_contents"
+                    app:layout_constraintStart_toStartOf="@+id/tv_home_toyLibrary_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_home_toyLibrary_title" />
+
+                <ImageView
+                    android:id="@+id/iv_home_toyLibrary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_toy_library"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -7,4 +7,9 @@
     <string name="community">커뮤니티</string>
     <string name="chat">채팅</string>
     <string name="mypage">마이페이지</string>
+    <string name="common">%s</string>
+
+    <!-- HOME -->
+    <string name="toy_library_title">장난감 도서관이 뭐야?</string>
+    <string name="toy_library_contents">영유아 육아 지원 장난감 도서관\n알아보러 가기</string>
 </resources>
