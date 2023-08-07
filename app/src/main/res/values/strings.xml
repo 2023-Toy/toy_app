@@ -7,4 +7,7 @@
     <string name="community">커뮤니티</string>
     <string name="chat">채팅</string>
     <string name="mypage">마이페이지</string>
+    
+    <!-- item -->
+    <string name="status">상태</string>
 </resources>
