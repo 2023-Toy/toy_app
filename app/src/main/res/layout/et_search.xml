@@ -18,6 +18,7 @@
             android:gravity="start"
             android:includeFontPadding="false"
             android:inputType="text"
+            android:textCursorDrawable="@color/brown"
             android:paddingVertical="5dp"
             android:paddingStart="10dp"
             app:layout_constraintBottom_toBottomOf="parent"

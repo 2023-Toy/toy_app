@@ -12,4 +12,8 @@
     <!-- HOME -->
     <string name="toy_library_title">장난감 도서관이 뭐야?</string>
     <string name="toy_library_contents">영유아 육아 지원 장난감 도서관\n알아보러 가기</string>
+    <string name="toy">장난감</string>
+    <string name="baby">아기용품</string>
+    <string name="recommend">%s님을 위한 추천 거래</string>
+    <string name="recent_community">최근 커뮤니티 게시글</string>
 </resources>
