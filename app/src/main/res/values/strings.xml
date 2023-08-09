@@ -8,6 +8,8 @@
     <string name="chat">채팅</string>
     <string name="mypage">마이페이지</string>
     <string name="common">%s</string>
+    <!-- ALL -->
+    <string name="count">총 %d 개</string>
 
     <!-- HOME -->
     <string name="toy_library_title">장난감 도서관이 뭐야?</string>
@@ -16,4 +18,9 @@
     <string name="baby">아기용품</string>
     <string name="recommend">%s님을 위한 추천 거래</string>
     <string name="recent_community">최근 커뮤니티 게시글</string>
+
+    <!-- TRANSACTION -->
+    <string name="transaction_detail">거래 하기</string>
+
+
 </resources>

@@ -33,14 +33,15 @@
 
         <ImageButton
             android:id="@+id/ib_home_alarm"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:background="@android:color/transparent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_alarm" />
+            app:srcCompat="@drawable/ic_alarm"
+            tools:ignore="SpeakableTextPresentCheck"/>
 
         <ImageView
             android:id="@+id/iv_home_profile"
@@ -53,7 +54,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <include
-            android:id="@+id/et_search"
+            android:id="@+id/et_home_search"
             layout="@layout/et_search"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -72,9 +73,9 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/pink_100"
             app:cardCornerRadius="5dp"
-            app:layout_constraintEnd_toEndOf="@+id/et_search"
-            app:layout_constraintStart_toStartOf="@+id/et_search"
-            app:layout_constraintTop_toBottomOf="@+id/et_search">
+            app:layout_constraintEnd_toEndOf="@+id/et_home_search"
+            app:layout_constraintStart_toStartOf="@+id/et_home_search"
+            app:layout_constraintTop_toBottomOf="@+id/et_home_search">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
