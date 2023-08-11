@@ -55,6 +55,13 @@
         <item name="android:includeFontPadding">false</item>
     </style>
 
+    <style name="tv_12_semiBold_white">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/notosanskr_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
 
 
     <style name="tv_14_regular_black">

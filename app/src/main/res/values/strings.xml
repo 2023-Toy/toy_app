@@ -21,6 +21,12 @@
 
     <!-- TRANSACTION -->
     <string name="transaction_detail">거래 하기</string>
+    <string name="to_chat">채팅하기</string>
+    <string name="selling">판매중</string>
+    <string name="requesting">요청중</string>
+    <string name="sharing">나눔중</string>
+    <string name="exchanging">교환중</string>
+    <string name="price">%d 원</string>
 
 
 </resources>
