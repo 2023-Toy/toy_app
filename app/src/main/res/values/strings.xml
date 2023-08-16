@@ -27,6 +27,7 @@
     <string name="sharing">나눔중</string>
     <string name="exchanging">교환중</string>
     <string name="price">%d 원</string>
+    <string name="caution">❗️주의사항</string>
 
 
 </resources>
