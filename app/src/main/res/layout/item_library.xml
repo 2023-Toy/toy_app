@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_il_library"
+        style="@style/tv_16_regular_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0000기관" />
+
+    <TextView
+        android:id="@+id/tv_il_address"
+        style="@style/tv_14_regular_gray300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_il_library"
+        app:layout_constraintTop_toBottomOf="@+id/tv_il_library"
+        tools:text="서울시 강북구 000 000" />
+
+    <TextView
+        android:id="@+id/tv_il_toy"
+        style="@style/tv_14_regular_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_il_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_il_address"
+        tools:text="장난감 장난감" />
+
+    <TextView
+        android:id="@+id/tv_jl_phone"
+        style="@style/tv_14_regular_gray200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="2dp"
+        app:drawableStartCompat="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_il_toy"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="02-0000-0000" />
+</androidx.constraintlayout.widget.ConstraintLayout>
