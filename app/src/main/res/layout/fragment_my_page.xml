@@ -39,7 +39,7 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_profile"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            style="@style/tv_16_bold_black"
+            style="@style/tv_14_bold_black"
             android:textColor="@color/black"/>
 
         <ImageButton
@@ -73,7 +73,7 @@
             android:layout_height="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-            app:srcCompat="@drawable/ic_plus"
+            app:srcCompat="@drawable/ic_circle_plus"
             android:background="@color/white"
             android:layout_marginEnd="10dp"
             tools:ignore="SpeakableTextPresentCheck"
@@ -96,7 +96,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_kidsList"
             android:layout_marginStart="20dp"
-            style="@style/tv_16_bold_black"
+            style="@style/tv_14_bold_black"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"
             />
@@ -126,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recent"
-            style="@style/tv_16_bold_black"
+            style="@style/tv_14_bold_black"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_heartList"

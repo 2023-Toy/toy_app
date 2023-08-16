@@ -8,6 +8,8 @@
     <string name="chat">채팅</string>
     <string name="mypage">마이페이지</string>
     <string name="common">%s</string>
+    <!-- ALL -->
+    <string name="count">총 %d 개</string>
 
     <!-- HOME -->
     <string name="toy_library_title">장난감 도서관이 뭐야?</string>
@@ -53,5 +55,16 @@
     
     <!-- item -->
     <string name="status">상태</string>
+
+    <!-- TRANSACTION -->
+    <string name="transaction_detail">거래 하기</string>
+    <string name="to_chat">채팅하기</string>
+    <string name="selling">판매중</string>
+    <string name="requesting">요청중</string>
+    <string name="sharing">나눔중</string>
+    <string name="exchanging">교환중</string>
+    <string name="price">%d 원</string>
+    <string name="caution">❗️주의사항</string>
+
 
 </resources>
