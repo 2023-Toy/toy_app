@@ -16,4 +16,39 @@
     <string name="baby">아기용품</string>
     <string name="recommend">%s님을 위한 추천 거래</string>
     <string name="recent_community">최근 커뮤니티 게시글</string>
+
+
+    <!-- MyPage -->
+    <string name="children">우리 아이</string>
+    <string name="name">%s</string>
+    <string name="like_list">찜 목록</string>
+    <string name="recent">최근 본 거래</string>
+    <string name="heart_count">%d</string>
+
+
+    <!-- Setting -->
+    <string name="app_option">앱 옵션</string>
+    <string name="license">오픈소스 라이센스</string>
+    <string name="push">푸시 동의</string>
+    <string name="privacy">개인정보 처리 방침</string>
+    <string name="logout">로그아웃</string>
+    <string name="out">회원 탈퇴</string>
+    <string name="app_version">앱 버전</string>
+    <string name="setting">설정</string>
+    <string name="version">버전 %s</string>
+
+    <!-- it_kids -->
+    <string name="kids_name">%s</string>
+    <string name="birthday">%d.%d.%d 출생</string>
+
+    <!-- recentTransaction -->
+    <string name="recent_tran">최근 본 거래 %d개</string>
+
+    <!-- like -->
+    <string name="like_count">총 %d개</string>
+
+    <!-- alarm -->
+    <string name="alarm">알람</string>
+
+
 </resources>
