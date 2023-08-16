@@ -47,6 +47,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/iv_transaction_detail_profile"
                     app:layout_constraintStart_toEndOf="@+id/iv_transaction_detail_profile"
                     app:layout_constraintTop_toTopOf="@+id/iv_transaction_detail_profile"
+                    android:text="안먹지"
                     tools:text="안먹지" />
 
                 <ImageView
@@ -76,6 +77,7 @@
                     android:layout_marginTop="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/view"
+                    android:text="장난감"
                     tools:text="장난감" />
                 <TextView
                     android:id="@+id/tv_transaction_detail_second_category"
@@ -86,6 +88,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/tv_transaction_detail_first_category"
                     app:layout_constraintStart_toEndOf="@+id/tv_transaction_detail_first_category"
                     app:layout_constraintTop_toTopOf="@+id/tv_transaction_detail_first_category"
+                    android:text="작동 완구"
                     tools:text="작동 완구" />
                 <TextView
                     android:id="@+id/tv_transaction_detail_type"
@@ -95,6 +98,7 @@
                     android:layout_marginTop="8dp"
                     app:layout_constraintStart_toStartOf="@+id/tv_transaction_detail_first_category"
                     app:layout_constraintTop_toBottomOf="@+id/tv_transaction_detail_first_category"
+                    android:text="직거래"
                     tools:text="직거래" />
 
                 <TextView
@@ -102,9 +106,9 @@
                     style="@style/tv_14_semiBold_black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:text="나이"
                     app:layout_constraintBottom_toBottomOf="@+id/tv_transaction_detail_type"
-                    app:layout_constraintStart_toEndOf="@+id/tv_transaction_detail_type"
+                    app:layout_constraintStart_toStartOf="@+id/tv_transaction_detail_second_category"
                     app:layout_constraintTop_toTopOf="@+id/tv_transaction_detail_type"
                     tools:text="나이" />
 
@@ -118,7 +122,39 @@
                     app:layout_constraintStart_toEndOf="@+id/tv_transaction_detail_age"
                     app:layout_constraintTop_toTopOf="@+id/tv_transaction_detail_age"
                     app:layout_constraintVertical_bias="0.0"
+                    android:text="5세 ~ 전연령"
                     tools:text="5세 ~ 전연령" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/tv_12_regular_gray300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/rb_transaction_detail"
+                    app:layout_constraintTop_toTopOf="@+id/rb_transaction_detail" />
+
+                <RatingBar
+                    android:id="@+id/rb_transaction_detail"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:rating="4"
+                    android:theme="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/tv_transaction_detail_date"
+                    style="@style/tv_12_regular_gray200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023.07.26"
+                    app:layout_constraintEnd_toEndOf="@+id/rb_transaction_detail"
+                    app:layout_constraintTop_toTopOf="@+id/tv_transaction_detail_age_content" />
 
                 <ImageView
                     android:id="@+id/iv_transaction_detail_main"
@@ -211,6 +247,8 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </com.google.android.material.card.MaterialCardView>
 
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 
@@ -235,15 +273,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageButton
+            <ToggleButton
                 android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/selector_ic_like"
+                android:background="@drawable/selector_ic_like"
+                android:textOn=" "
+                android:textOff=" "
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bottom_view" />
