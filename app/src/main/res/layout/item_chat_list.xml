@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_icl_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_icl_name"
+        style="@style/tv_16_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_icl_img"
+        app:layout_constraintTop_toTopOf="@+id/iv_icl_img"
+        tools:text="닉네임" />
+
+    <TextView
+        android:id="@+id/tv_icl_content"
+        style="@style/tv_14_regular_gray300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:ems="13"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="@+id/tv_icl_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_icl_name"
+        tools:text="내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. " />
+
+    <TextView
+        android:id="@+id/tv_icl_time"
+        style="@style/tv_12_regular_gray200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="30분 전" />
+
+    <View
+        android:id="@+id/v_icl_time"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/pink_200"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_icl_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_icl_time" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_icl_chat_cnt"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/bg_chat_cnt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_icl_time"
+        app:layout_constraintStart_toStartOf="@+id/tv_icl_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_icl_time">
+
+        <TextView
+            android:id="@+id/tv_icl_chat_cnt"
+            style="@style/tv_12_regular_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="99" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

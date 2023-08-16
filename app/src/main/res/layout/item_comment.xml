@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/tv_comment_profile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_comment_name"
+        style="@style/tv_14_semiBold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_comment_profile"
+        app:layout_constraintStart_toEndOf="@+id/tv_comment_profile"
+        app:layout_constraintTop_toTopOf="@+id/tv_comment_profile"
+        tools:text="닉네임" />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        style="@style/tv_14_regular_gray400"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_comment_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_name"
+        tools:text="댓글 내용입니다. 댓글 내용입니다. 댓글 내용입니다. 댓글 내용입니다. 댓글 내용입니다. 댓글 내용입니다. 댓글 내용입니다. 댓글 내용입니다. 댓글 내용입니다. " />
+
+    <TextView
+        android:id="@+id/tv_comment_date"
+        style="@style/tv_12_regular_gray200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_comment_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_comment_name"
+        tools:text="2023.08.07" />
+</androidx.constraintlayout.widget.ConstraintLayout>

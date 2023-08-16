@@ -50,5 +50,8 @@
     <!-- alarm -->
     <string name="alarm">알람</string>
 
+    
+    <!-- item -->
+    <string name="status">상태</string>
 
 </resources>
