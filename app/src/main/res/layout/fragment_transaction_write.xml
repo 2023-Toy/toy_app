@@ -22,13 +22,15 @@
             app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tb_transaction_write">
+            app:layout_constraintTop_toBottomOf="@+id/tb_transaction_write"
+            >
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/textView9"
                     style="@style/tv_14_regular_gray400"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -37,6 +39,145 @@
                     android:text="@string/upload_photo"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/bt_transaction_write_camera"
+                    layout="@layout/bt_camera"
+                    android:layout_width="73dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_transaction_write_camera"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/bt_transaction_write_camera"
+                    app:layout_constraintTop_toTopOf="@+id/bt_transaction_write_camera" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/gray_200"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_transaction_write_camera" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/tv_14_regular_gray400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/transaction_write_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+                <EditText
+                    android:id="@+id/et_transaction_write_tilte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:textCursorDrawable="@color/brown"
+                    style="@style/tv_14_regular_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/tv_14_regular_gray400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/transaction_write_contents"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_transaction_write_tilte" />
+
+                <EditText
+                    android:id="@+id/et_transaction_write_contents"
+                    style="@style/tv_14_regular_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:hint="@string/transaction_write_contents_hint"
+                    android:textCursorDrawable="@color/brown"
+                    android:lines="8"
+                    android:gravity="top"
+                    android:inputType="text|textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/tv_14_regular_gray400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/transaction_write_caution"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_transaction_write_contents" />
+
+                <EditText
+                    android:id="@+id/et_transaction_write_caution"
+                    style="@style/tv_14_regular_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:gravity="top"
+                    android:hint="@string/transaction_write_caution_hint"
+                    android:inputType="text|textMultiLine"
+                    android:lines="4"
+                    android:textCursorDrawable="@color/brown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/tv_14_regular_gray400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/category"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_transaction_write_caution" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_transaction_write_main_category"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_toy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toy"
+                        app:chipStrokeColor="@color/brown"
+                        app:chipStrokeWidth="1dp"
+                        style="@style/tv_14_regular_brown"
+                        app:chipBackgroundColor="@color/white"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_baby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/baby"
+                        />
+
+                </com.google.android.material.chip.ChipGroup>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 
@@ -56,6 +197,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

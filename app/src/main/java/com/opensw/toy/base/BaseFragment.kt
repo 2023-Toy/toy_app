@@ -12,19 +12,20 @@ import androidx.fragment.app.Fragment
 
 abstract class BaseFragment<T: ViewDataBinding>(@LayoutRes val layoutRes: Int)
     : Fragment() {
-    lateinit var binding: T
+    private  var _binding: T? = null
+    val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, layoutRes, container, false)
+        _binding = DataBindingUtil.inflate(inflater, layoutRes, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.lifecycleOwner = this@BaseFragment
+        binding.lifecycleOwner = this@BaseFragment //livedata를 사용하기 때문에
         initView()
         super.onViewCreated(view, savedInstanceState)
     }
@@ -36,5 +37,9 @@ abstract class BaseFragment<T: ViewDataBinding>(@LayoutRes val layoutRes: Int)
         Log.e(tag, msg)
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
     abstract fun initView()
 }

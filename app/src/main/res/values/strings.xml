@@ -11,11 +11,39 @@
     <!-- ALL -->
     <string name="count">총 %d 개</string>
 
+    <string name="category">카테고리</string>
+
+    <string name="baby">아기용품</string>
+    <string name="for_mom">엄마용품</string>
+    <string name="outdoor">외출용품</string>
+    <string name="device">전자기기</string>
+    <string name="sanitary">위생용품</string>
+    <string name="clothes">아기의류</string>
+    <string name="baby_goods">이유용품</string>
+    <string name="bed">침구</string>
+    <string name="food">식품</string>
+
+    <string name="toy">장난감</string>
+    <string name="tactile_play">촉감놀이</string>
+    <string name="block">블록</string>
+    <string name="sports">스포츠</string>
+    <string name="ride">탈 것</string>
+    <string name="book">도서</string>
+    <string name="puzzle">보드게임/퍼즐</string>
+    <string name="doll">인형</string>
+    <string name="robot">로봇/피규어/인형</string>
+    <string name="role_play">역할놀이</string>
+    <string name="stationery">문구</string>
+    <string name="music">음악</string>
+    <string name="water_play">물놀이</string>
+    <string name="operational_toy">작동 완구</string>
+
+
+
+
     <!-- HOME -->
     <string name="toy_library_title">장난감 도서관이 뭐야?</string>
     <string name="toy_library_contents">영유아 육아 지원 장난감 도서관\n알아보러 가기</string>
-    <string name="toy">장난감</string>
-    <string name="baby">아기용품</string>
     <string name="recommend">%s님을 위한 추천 거래</string>
     <string name="recent_community">최근 커뮤니티 게시글</string>
 
@@ -70,6 +98,12 @@
     <string name="transaction_write">거래 글 작성</string>
     <string name="write">글 등록하기</string>
     <string name="upload_photo">사진 업로드</string>
+    <string name="transaction_write_title">글 제목</string>
+    <string name="transaction_write_contents">상품설명</string>
+    <string name="transaction_write_contents_hint">상품에 대한 설명을 적어주세요! 자세할수록 좋아요!</string>
+    <string name="transaction_write_caution">주의사항</string>
+    <string name="transaction_write_caution_hint">게시글 내에 더 강조될 주의사항을 적어주세요!</string>
+    
 
 
 </resources>

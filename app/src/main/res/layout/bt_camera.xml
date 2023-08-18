@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bt_camera"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/brown"
+            app:strokeWidth="1dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_camera"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+                    <TextView
+                        android:id="@+id/bt_camera_count"
+                        style="@style/tv_16_bold_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/tv_16_bold_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+
+                         />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/tv_16_bold_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                         />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+</layout>
