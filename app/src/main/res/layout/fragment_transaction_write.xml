@@ -158,6 +158,7 @@
                     android:id="@+id/cg_transaction_write_main_category"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
+                    app:singleSelection="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/textView15"
                     app:layout_constraintTop_toBottomOf="@+id/textView15">
@@ -166,18 +167,41 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/toy"
-                        app:chipStrokeColor="@color/brown"
-                        app:chipStrokeWidth="1dp"
-                        style="@style/tv_14_regular_brown"
-                        app:chipBackgroundColor="@color/white"/>
+                        style="@style/chip_brown"
+                        />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip_baby"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/baby"
+                        style="@style/chip_brown"
                         />
-
                 </com.google.android.material.chip.ChipGroup>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_transaction_write_sub_category"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    app:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/cg_transaction_write_main_category"
+                    app:layout_constraintTop_toBottomOf="@+id/cg_transaction_write_main_category">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_toy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toy"
+                        style="@style/chip_pink"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_baby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/baby"
+                        style="@style/chip_pink"
+                        />
+                </com.google.android.material.chip.ChipGroup>
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 

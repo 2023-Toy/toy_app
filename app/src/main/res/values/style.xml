@@ -371,5 +371,20 @@
         <item name="colorControlNormal">@color/gray_200</item>
         <item name="colorControlActivated">@color/yellow</item>
     </style>
-    
+
+    <style name="chip_brown" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/selector_chip_bg_brown</item>
+        <item name="chipStrokeColor">@color/selector_chip_stroke_brown</item>
+        <item name="android:textColor">@color/selector_chip_stroke_brown</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
+
+    <style name="chip_pink" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/selector_chip_bg_pink</item>
+        <item name="chipStrokeColor">@color/selector_chip_stroke_pink</item>
+        <item name="android:textColor">@color/selector_chip_stroke_pink</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
 </resources>
