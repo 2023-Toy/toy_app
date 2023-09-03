@@ -103,7 +103,24 @@
     <string name="transaction_write_contents_hint">상품에 대한 설명을 적어주세요! 자세할수록 좋아요!</string>
     <string name="transaction_write_caution">주의사항</string>
     <string name="transaction_write_caution_hint">게시글 내에 더 강조될 주의사항을 적어주세요!</string>
-    
+    <string name="transaction_write_transaction_type">거래 종류</string>
+    <string name="sell">판매</string>
+    <string name="request">요청</string>
+    <string name="share">나눔</string>
+    <string name="exchange">교환</string>
+    <string name="transaction_write_sell_price">판매 가격</string>
+    <string name="transaction_write_states">물품 상태</string>
+    <string name="gender">성별</string>
+    <string name="gender_boy">남아</string>
+    <string name="gender_girl">여아</string>
+    <string name="gender_public">공용</string>
+    <string name="age_range">나이대</string>
+    <string name="transaction_write_month">개월</string>
+    <string name="transaction_write_age">나이</string>
+    <string name="transaction_write_method">거래 희망 방식</string>
+    <string name="direct">직거래</string>
+    <string name="delivery">택배거래</string>
+    <string name="both_method">모두</string>
 
 
 </resources>

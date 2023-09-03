@@ -102,14 +102,26 @@
                     tools:text="직거래" />
 
                 <TextView
+                    android:id="@+id/tv_transaction_detail_gender"
+                    style="@style/tv_14_semiBold_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_transaction_detail_type"
+                    app:layout_constraintStart_toStartOf="@+id/tv_transaction_detail_second_category"
+                    app:layout_constraintTop_toTopOf="@+id/tv_transaction_detail_type"
+                    tools:text="@string/gender" />
+
+                <TextView
                     android:id="@+id/tv_transaction_detail_age"
                     style="@style/tv_14_semiBold_black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:text="나이"
-                    app:layout_constraintBottom_toBottomOf="@+id/tv_transaction_detail_type"
-                    app:layout_constraintStart_toStartOf="@+id/tv_transaction_detail_second_category"
-                    app:layout_constraintTop_toTopOf="@+id/tv_transaction_detail_type"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_transaction_detail_gender"
+                    app:layout_constraintStart_toEndOf="@+id/tv_transaction_detail_gender"
+                    app:layout_constraintTop_toTopOf="@+id/tv_transaction_detail_gender"
                     tools:text="나이" />
 
                 <TextView
@@ -141,7 +153,6 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="24dp"
                     android:rating="4"
-                    android:theme="@style/RatingBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"

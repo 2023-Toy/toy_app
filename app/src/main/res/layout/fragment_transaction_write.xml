@@ -19,7 +19,8 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/bt_transaction_write_add"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tb_transaction_write">
@@ -157,6 +158,7 @@
                     android:id="@+id/cg_transaction_write_main_category"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/textView15"
                     app:layout_constraintTop_toBottomOf="@+id/textView15"
@@ -180,96 +182,270 @@
                 </com.google.android.material.chip.ChipGroup>
 
                 <HorizontalScrollView
+                    android:id="@+id/sc_subcategory"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="4dp"
                     android:scrollbars="none"
                     app:layout_constraintStart_toStartOf="@+id/cg_transaction_write_main_category"
-                    app:layout_constraintTop_toBottomOf="@+id/cg_transaction_write_main_category">
+                    app:layout_constraintTop_toBottomOf="@+id/cg_transaction_write_main_category"
+                    app:layout_constraintEnd_toEndOf="parent">
 
                     <com.google.android.material.chip.ChipGroup
                         android:id="@+id/cg_transaction_write_sub_category"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:isScrollContainer="true"
                         app:singleLine="true">
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_for_mom"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/for_mom"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_outdoor"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/outdoor"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_device"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/device"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_sanitary"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/sanitary"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_clothes"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/clothes"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_baby_goods"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/baby_goods"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_bed"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/bed"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
-
-<!--                        <com.google.android.material.chip.Chip-->
-<!--                            android:id="@+id/chip_food"-->
-<!--                            style="@style/chip_pink"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/food"-->
-<!--                            app:chipMinTouchTargetSize="0dp" />-->
                     </com.google.android.material.chip.ChipGroup>
                 </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/tv_14_regular_gray400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/transaction_write_transaction_type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sc_subcategory" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_transaction_write_transaction_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:singleSelection="true"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_sell"
+                        style="@style/chip_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sell"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_request"
+                        style="@style/chip_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/request"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_share"
+                        style="@style/chip_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_exchange"
+                        style="@style/chip_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/exchange"
+                        app:chipMinTouchTargetSize="0dp" />
+                </com.google.android.material.chip.ChipGroup>
+                
+                <EditText
+                    android:id="@+id/et_transaction_write_sell_price"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="end"
+                    app:layout_constraintStart_toStartOf="@+id/cg_transaction_write_transaction_type"
+                    app:layout_constraintTop_toBottomOf="@+id/cg_transaction_write_transaction_type"
+                    style="@style/tv_14_regular_black"
+                    android:hint="@string/transaction_write_sell_price"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="원"
+                    android:layout_marginStart="4dp"
+                    style="@style/tv_14_regular_black"
+                    app:layout_constraintStart_toEndOf="@+id/et_transaction_write_sell_price"
+                    app:layout_constraintTop_toTopOf="@+id/et_transaction_write_sell_price"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_transaction_write_sell_price"/>
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    style="@style/tv_14_regular_gray400"
+                    android:text="@string/transaction_write_states"
+                    app:layout_constraintStart_toStartOf="@+id/et_transaction_write_sell_price"
+                    app:layout_constraintTop_toBottomOf="@+id/et_transaction_write_sell_price"/>
+                <RatingBar
+                    android:id="@+id/rb_transaction_write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:isIndicator="false"
+                    android:theme="@style/RatingBar"
+                    style="?android:ratingBarStyleIndicator"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    />
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    style="@style/tv_14_regular_gray400"
+                    android:text="@string/gender"
+                    app:layout_constraintStart_toStartOf="@+id/rb_transaction_write"
+                    app:layout_constraintTop_toBottomOf="@+id/rb_transaction_write"/>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_transaction_write_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:singleSelection="true"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_boy"
+                        style="@style/chip_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_boy"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_girl"
+                        style="@style/chip_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_girl"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_both"
+                        style="@style/chip_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_public"
+                        app:chipMinTouchTargetSize="0dp" />
+                </com.google.android.material.chip.ChipGroup>
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    style="@style/tv_14_regular_gray400"
+                    android:text="@string/age_range"
+                    app:layout_constraintStart_toStartOf="@+id/cg_transaction_write_gender"
+                    app:layout_constraintTop_toBottomOf="@+id/cg_transaction_write_gender"/>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_transaction_write_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:singleSelection="true"
+                    app:layout_constraintStart_toStartOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_month"
+                        style="@style/chip_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction_write_month"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_age"
+                        style="@style/chip_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction_write_age"
+                        app:chipMinTouchTargetSize="0dp" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <EditText
+                    android:id="@+id/et_transaction_write_min_range"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:hint="최소"
+                    style="@style/tv_14_regular_black"
+                    app:layout_constraintStart_toStartOf="@+id/cg_transaction_write_age"
+                    app:layout_constraintTop_toBottomOf="@+id/cg_transaction_write_age"/>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    style="@style/tv_14_regular_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ~ "
+                    app:layout_constraintBottom_toBottomOf="@+id/et_transaction_write_min_range"
+                    app:layout_constraintStart_toEndOf="@+id/et_transaction_write_min_range"
+                    app:layout_constraintTop_toTopOf="@+id/et_transaction_write_min_range" />
+
+                <EditText
+                    android:id="@+id/et_transaction_write_min_max"
+                    style="@style/tv_14_regular_black"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="최대"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_transaction_write_min_range"
+                    app:layout_constraintStart_toEndOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/et_transaction_write_min_range" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    style="@style/tv_14_regular_gray400"
+                    android:text="@string/transaction_write_transaction_type"
+                    app:layout_constraintStart_toStartOf="@+id/et_transaction_write_min_range"
+                    app:layout_constraintTop_toBottomOf="@+id/et_transaction_write_min_range"/>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_transaction_write_transaction_hope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:singleSelection="true"
+                    app:layout_constraintStart_toStartOf="@+id/textView21"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21">
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_direct"
+                        style="@style/chip_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/direct"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_delivery"
+                        style="@style/chip_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery"
+                        app:chipMinTouchTargetSize="0dp" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_both_method"
+                        style="@style/chip_brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/both_method"
+                        app:chipMinTouchTargetSize="0dp" />
+                </com.google.android.material.chip.ChipGroup>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/appCompatButton"
+            android:id="@+id/bt_transaction_write_add"
             style="@style/tv_16_semiBold_white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/bg_button"
             android:minWidth="0dp"
@@ -280,7 +456,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
