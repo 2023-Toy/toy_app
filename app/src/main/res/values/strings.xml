@@ -67,4 +67,7 @@
     <string name="caution">❗️주의사항</string>
 
 
+    <!-- COMMUNITY -->
+    <string name="comment_cnt">댓글 %d</string>
+
 </resources>
