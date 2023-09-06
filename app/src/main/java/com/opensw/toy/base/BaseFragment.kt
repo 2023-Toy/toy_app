@@ -26,20 +26,31 @@ abstract class BaseFragment<T: ViewDataBinding>(@LayoutRes val layoutRes: Int)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.lifecycleOwner = this@BaseFragment //livedata를 사용하기 때문에
-        initView()
+//        initView()
+        initUI()
+        initObserver()
         super.onViewCreated(view, savedInstanceState)
     }
 
-    /*protected fun showToast(msg: String) =
-        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()*/
-
-    protected fun loge(msg: String,tag:String = javaClass.simpleName, ){
-        Log.e(tag, msg)
+    override fun onResume() {
+        initListener()
+        super.onResume()
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-    abstract fun initView()
+
+    /*protected fun showToast(msg: String) =
+       Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()*/
+    protected fun loge(msg: String,tag:String = javaClass.simpleName, ){
+        Log.e(tag, msg)
+    }
+
+//    abstract fun initView()
+    abstract fun initData()
+    abstract fun initUI()
+    abstract fun initObserver()
+    abstract fun initListener()
 }

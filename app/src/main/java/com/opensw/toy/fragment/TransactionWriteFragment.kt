@@ -11,7 +11,19 @@ import com.opensw.toy.databinding.FragmentTransactionWriteBinding
 import com.opensw.toy.util.SubCategory
 
 class TransactionWriteFragment : BaseFragment<FragmentTransactionWriteBinding>(R.layout.fragment_transaction_write) {
-    override fun initView() {
+    override fun initData() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initUI() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initObserver() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initListener() {
         binding.apply {
             btTransactionWriteAdd.setOnClickListener {
                 Toast.makeText(context, "글 등록하기", Toast.LENGTH_SHORT).show()
@@ -20,7 +32,7 @@ class TransactionWriteFragment : BaseFragment<FragmentTransactionWriteBinding>(R
             chipToy.setOnClickListener {
                 scSubcategory.scrollTo(0,0)
                 cgTransactionWriteSubCategory.removeAllViews()
-                SubCategory.Toy.forEach{ it ->
+                SubCategory.Toy.map { it.second }.forEach{ it ->
                     cgTransactionWriteSubCategory.addView((layoutInflater.inflate(R.layout.chip_pink,cgTransactionWriteSubCategory,false) as Chip).apply {
                         text = it
                     })
@@ -29,7 +41,7 @@ class TransactionWriteFragment : BaseFragment<FragmentTransactionWriteBinding>(R
             chipBaby.setOnClickListener {
                 scSubcategory.scrollTo(0,0)
                 cgTransactionWriteSubCategory.removeAllViews()
-                SubCategory.Baby.forEach{ it ->
+                SubCategory.Baby.map { it.second }.forEach{ it ->
                     cgTransactionWriteSubCategory.addView((layoutInflater.inflate(R.layout.chip_pink,cgTransactionWriteSubCategory,false) as Chip).apply {
                         text = it
                     })
