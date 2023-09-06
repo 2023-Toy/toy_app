@@ -7,7 +7,9 @@ import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.opensw.toy.R
 import com.opensw.toy.base.BaseActivity
 import com.opensw.toy.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
