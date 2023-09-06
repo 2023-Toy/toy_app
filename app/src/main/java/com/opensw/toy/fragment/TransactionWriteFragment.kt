@@ -12,15 +12,15 @@ import com.opensw.toy.util.SubCategory
 
 class TransactionWriteFragment : BaseFragment<FragmentTransactionWriteBinding>(R.layout.fragment_transaction_write) {
     override fun initData() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initUI() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initObserver() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initListener() {

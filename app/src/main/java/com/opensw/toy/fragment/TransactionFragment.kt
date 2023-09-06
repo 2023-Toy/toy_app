@@ -7,15 +7,15 @@ import com.opensw.toy.databinding.FragmentTransactionBinding
 
 class TransactionFragment : BaseFragment<FragmentTransactionBinding>(R.layout.fragment_transaction) {
     override fun initData() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initUI() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initObserver() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initListener() {

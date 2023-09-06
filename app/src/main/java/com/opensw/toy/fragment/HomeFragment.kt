@@ -7,19 +7,19 @@ import com.opensw.toy.databinding.FragmentHomeBinding
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     override fun initData() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initUI() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initObserver() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initListener() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
 }

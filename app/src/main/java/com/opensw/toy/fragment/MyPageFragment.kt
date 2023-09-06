@@ -6,19 +6,19 @@ import com.opensw.toy.databinding.FragmentMyPageBinding
 
 class MyPageFragment : BaseFragment<FragmentMyPageBinding>(R.layout.fragment_my_page) {
     override fun initData() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initUI() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initObserver() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
     override fun initListener() {
-        TODO("Not yet implemented")
+        //TODO("Not yet implemented")
     }
 
 }

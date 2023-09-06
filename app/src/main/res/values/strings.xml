@@ -123,4 +123,7 @@
     <string name="both_method">모두</string>
 
 
+    <!-- COMMUNITY -->
+    <string name="comment_cnt">댓글 %d</string>
+
 </resources>
