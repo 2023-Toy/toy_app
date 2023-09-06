@@ -127,7 +127,7 @@ dependencies {
 
     //google auth
     //implementation 'com.google.android.gms:play-services-auth:20.6.0'
-
+    implementation 'com.google.android.gms:play-services-oss-licenses:17.0.1'
 
 }
 kapt{
