@@ -123,8 +123,6 @@ dependencies {
     implementation "io.github.ParkSangGwon:tedpermission-normal:$ted_version"
     implementation "io.github.ParkSangGwon:tedpermission-coroutine:$ted_version"
 
-    implementation 'com.google.android.gms:play-services-oss-licenses:17.0.0'
-
     //implementation "com.android.support:design:33.0.0"
 
     //google auth
